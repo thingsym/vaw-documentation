@@ -1,0 +1,91 @@
+.navigation {
+  @include grid($flex-wrap: nowrap, $justify-content: space-between);
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.nav-prev {}
+.nav-next {
+  margin-left: auto;
+}
+
+@media screen and (max-width: #{map-get($default-breakpoints, xs )} ) {
+  .navigation {
+    @include grid($flex-flow: column nowrap, $justify-content: null, $align-items: center);
+  }
+  .nav-next {
+    margin-left: 0;
+  }
+}
+
+.panel {
+  margin-bottom: $default-margin;
+  padding: 1rem;
+}
+.panel-primary {
+  border: 1px solid $default-line-color;
+}
+.panel-note {
+  color: #fff;
+  background: #4ba0e1;
+}
+.panel-tip {
+  color: #fff;
+  background: #609f43;
+}
+.panel-caution {
+  color: #fff;
+  background: #de776d;
+}
+.panel-warning {
+  color: #fff;
+  background: #e67e22;
+}
+.panel-danger {
+  color: #fff;
+  background: #ce3426;
+}
+
+.panel-header {
+  h3 {
+    margin: 0;
+    margin-bottom: 0.6rem;
+  }
+}
+.panel-body {}
+
+.button {
+  display: inline-block;
+  font-size: 120%;
+  padding: .8rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #ce3426;
+  margin-bottom: 1.2rem;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #e6210f;
+  }
+}
+
+.button-download {
+  background: #178011;
+  &:hover {
+    background: #129e0a;
+  }
+}
+.button-cloud-download {
+  background: #178011;
+  &:hover {
+    background: #129e0a;
+  }
+}
+
+.notification {
+  padding: .2rem 1.2rem;
+  text-align: center;
+  background: $sidebar-active-color;
+}
