@@ -1,10 +1,32 @@
 ---
 title: "Changelog"
-date: 2017-10-17T15:26:15Z
+date: 2018-04-09T15:26:15Z
 draft: false
 weight: 110
 ---
 
+* version 0.5.6 - 2018.03.25
+	* update vm_box
+	* add type option into config.vm.synced_folder
+	* bump up PHP version to 7.2.1
+	* fix mailhog handlers
+	* bump up daemonize version to 1.7.8
+	* improve daemonize installation
+	* remove CityFan repo
+	* add Exit Code into command
+	* add chrony with centos 7
+	* improve phpenv.sh version 0.1.2 for CentOS
+	* add mod_ssl
+	* change setting name from ssl_wp_admin to ssl
+	* fix ssl path
+	* fix self Certification Authority
+	* fix ruby build env
+	* remove rbenv-gem-rehash
+	* fix bundler via rbenv-default-gems
+	* change multiple conditions of the when statement to as a list
+	* change readme file name to upper case
+* version 0.5.5 - 2017.12.05
+	* add documentation
 * version 0.5.4 - 2017.11.19
 	* fix comment
 	* add WordPress plugin
@@ -16,7 +38,7 @@ weight: 110
 	* change database charset from utf8 to utf8mb4
 	* add MailHog
 * version 0.5.2 - 2017.08.17
-	* bump up PHP version number to 7.1.7
+	* bump up PHP version to 7.1.7
 	* fix phpenv.sh
 	* change setting name from ssl_admin to ssl_wp_admin
 	* enable sync-dir with before-command and after-command
@@ -51,7 +73,7 @@ weight: 110
 	* fix php post_max_size to 32M
 	* remove wp-phpcs ruleset
 	* add custom hhvm.server.ini
-	* bump up Ruby version number to 2.4.1
+	* bump up Ruby version to 2.4.1
 	* add webserver h2o
 	* change hhvm fastcgi connect to UNIX domain socket from TCP
 	* change webserver and fastcgi owner/group nobody
@@ -86,7 +108,7 @@ weight: 110
 	* provision fail only when SELinux is Enforcing
 	* fix dest path of default_configure_options
 	* fix php.conf.j2
-	* bump up node 6.9.1
+	* bump up node version to 6.9.1
 	* fix default-node-packages.j2
 * version 0.4.2 - 2016.10.04
 	* add develop-tools role, fix build environment
@@ -97,7 +119,7 @@ weight: 110
 	* fix inline shell in Vagrantfile
 	* fix nodejs version
 * version 0.4.0 - 2016.08.22
-	* bump up php 7.0.7
+	* bump up php version to 7.0.7
 	* change to package module from yum module
 	* change default box to CentOS 7 from CentOS 6
 	* add synced_folder /vagrant

@@ -1,6 +1,6 @@
 ---
 title: "Custom Config"
-date: 2017-10-17T15:26:15Z
+date: 2018-04-09T15:26:15Z
 draft: false
 weight: 90
 ---
@@ -23,5 +23,4 @@ As follows editable configuration files.
 * nginx.wordpress.multisite.conf.j2
 * percona.my.cnf.j2
 * php-build.default_configure_options.j2
-* php.conf.j2
 * ssh-config.j2

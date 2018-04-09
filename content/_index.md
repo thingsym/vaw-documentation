@@ -1,6 +1,6 @@
 # VAW (Vagrant Ansible WordPress)
 
-## VAW (Vagrant Ansible WordPress) is Ansible playbooks for website developer, webmaster and WordPress theme/plugin developer.
+## The **VAW (Vagrant Ansible WordPress)** is **Ansible playbooks** for website developer, designer, webmaster and WordPress theme/plugin developer.
 
 Launch the development environment in Vagrant, you can build the website and verify the operation of the website. Of course, you can also develop WordPress themes and plugins.
 

@@ -1,6 +1,6 @@
 ---
 title: "Directory Layout"
-date: 2017-10-17T15:26:15Z
+date: 2018-04-09T15:26:15Z
 draft: false
 weight: 40
 ---
@@ -29,8 +29,8 @@ You can create the same environment as the production environment, when you buil
 * LICENSE (license file)
 * plugins (stores WordPress plugin zip format files)
 * Rakefile (Rakefile of ServerSpec)
-* readme-ja.md
-* readme.md
+* README-ja.md
+* README.md
 * roles (stores Ansible playbook of each role)
 * site.yml (Ansible playbook core file)
 * spec (stores ServerSpec spec file)
