@@ -1,9 +1,18 @@
 baseURL = "http://thingsym.github.io/vaw/"
 languageCode = "en-us"
 title = "VAW (Vagrant Ansible WordPress) Documentation"
-theme = "hugo-theme-techdoc"
+
+theme = "hugo-theme-techdoc-0.1.0"
+
+hasCJKLanguage = true
+metaDataFormat = "yaml"
+
+pygmentsUseClasses = true
+pygmentsCodefences = true
 
 [Params]
-version = "0.5.4"
-description = "Ansible playbooks for website developer, webmaster and WordPress theme/plugin developer."
-github_repository = "https://github.com/thingsym/vaw"
+    version = "0.5.6"
+    description = "VAW (Vagrant Ansible WordPress) is Ansible playbooks for website developer, designer, webmaster and WordPress theme/plugin developer."
+    github_repository = "https://github.com/thingsym/vaw"
+    # Edit documentation repo (set to automatically enter "edit" mode)
+    github_doc_repository = "https://github.com/thingsym/vaw-documentation"
