@@ -11,7 +11,7 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 
 [Params]
-    version = "0.5.6"
+    version = "0.5.7"
     description = "VAW (Vagrant Ansible WordPress) is Ansible playbooks for website developer, designer, webmaster and WordPress theme/plugin developer."
     github_repository = "https://github.com/thingsym/vaw"
     # Edit documentation repo (set to automatically enter "edit" mode)

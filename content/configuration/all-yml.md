@@ -1,6 +1,6 @@
 ---
 title: "all.yml"
-date: 2018-04-09T15:26:15Z
+date: 2018-05-20T15:26:15Z
 draft: false
 weight: 20
 ---
@@ -36,7 +36,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 
 	# e.g. latest, nightly, 4.1, 4.1-beta1
 	# see Release Archive - https://wordpress.org/download/release-archive/
-	# 3.5.2 or later to work properly
+	# 3.7 or later to work properly
 	version            : latest
 
 	# e.g. en_US, ja, ...
@@ -50,11 +50,11 @@ In YAML format, you can set server, database and WordPress environment. And can 
 
 	multisite          : false   # true|false
 
-	# default theme|slug|url|zip (local path, /vagrant/themes/~.zip)
+	# default theme|slug|url|zip (local path, /vagrant/themes/*.zip)
 	activate_theme     : ''
 	themes             : []
 
-	# slug|url|zip (local path, /vagrant/plugins/~.zip)
+	# slug|url|zip (local path, /vagrant/plugins/*.zip)
 	activate_plugins   :
 	                        - theme-check
 	                        - log-deprecated-notices
@@ -80,10 +80,10 @@ In YAML format, you can set server, database and WordPress environment. And can 
 	                      tag         : ''
 
 	# Any one of 4 ways to import
-	import_xml_data    : ''   # local path, /vagrant/import/~.xml
-	import_db_data     : ''   # local path, /vagrant/import/~.sql
+	import_xml_data    : ''   # local path, /vagrant/import/*.xml
+	import_db_data     : ''   # local path, /vagrant/import/*.sql
 	import_backwpup    :
-	                      path          : ''   # local path, /vagrant/import/~.zip
+	                      path          : ''   # local path, /vagrant/import/*.zip
 	                      db_data_file  : ''
 	                      xml_data_file : ''
 	import_admin       : false   # true|false
@@ -135,7 +135,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 * `version` (required) version of WordPress (default: `latest`)
 	* e.g. `latest`, `4.1`, `4.1-beta1`
 	* see [Release Archive](https://wordpress.org/download/release-archive/)
-	* version 3.5.2 or later to work properly
+	* version 3.7 or later to work properly
 * `lang` (required) WordPress in your language (default: `en_US`)
 	* e.g. `en_US`, `ja`, ...
 	* see [wordpress-i18n list](http://svn.automattic.com/wordpress-i18n/)
@@ -149,11 +149,10 @@ In YAML format, you can set server, database and WordPress environment. And can 
 * `multisite` Multisite enabled flag (default: `false` / value: `true` | `false`)
 * `activate_theme` install a theme and activated (default: default theme)
 	* set default theme `''`, `theme slug`, `zip file URL` or  `local zip file path`
-	* set `/vagrant/themes/~.zip` by local zip file path
+	* set `/vagrant/themes/*.zip` by local zip file path
 * `themes` install themes
 	* set in YAML arrays of hashes format `theme slug`, `zip file URL` or `local zip file path`
-	* set `/vagrant/themes/~.zip` by local zip file path
-	* comment out with a `#` at the beginning of a line, if you want to disable the setting.
+	* set `/vagrant/themes/*.zip` by local zip file path
 
 Configuration example
 
@@ -167,8 +166,7 @@ Disable the setting case
 
 * `activate_plugins` install plagins and activated
 	* set in YAML arrays of hashes format `plagin slug`, `zip file URL` or `local zip file path`
-	* set `/vagrant/plagins/~.zip` by local zip file path
-	* comment out with a `#` at the beginning of a line, if you want to disable the setting.
+	* set `/vagrant/plagins/*.zip` by local zip file path
 
 Configuration example
 
@@ -182,13 +180,11 @@ Disable the setting case
 
 * `plugins` install plagins
 	* set in YAML arrays of hashes format `plagin slug`, `zip file URL` or `local zip file path`
-	* set `/vagrant/plagins/~.zip` by local zip file path
-	* comment out with a `#` at the beginning of a line, if you want to disable the setting.
+	* set `/vagrant/plagins/*.zip` by local zip file path
 
 * `theme_mod` setting theme_mod (theme modification value)
 	* see [set_theme_mod()](http://codex.wordpress.org/Function_Reference/set_theme_mod)
 	* set in YAML nested hash format
-	* comment out with a `#` at the beginning of a line, if you want to disable the setting.
 
 Configuration example
 
@@ -202,7 +198,6 @@ Disable the setting case
 * `options` setting options
 	* see [update_option()](http://codex.wordpress.org/Function_Reference/update_option) and [Option Reference](http://codex.wordpress.org/Option_Reference)
 	* set in YAML nested hash format
-	* comment out with a `#` at the beginning of a line, if you want to disable the setting.
 
 Configuration example
 
@@ -220,10 +215,10 @@ Disable the setting case
 	* `structure` set the permalink structure using the structure tags
 	* `category` set the prefix of the category archive
 	* `tag` set the prefix of the tag archive
-* `import_xml_data` local WordPress export (WXR) file path `/vagrant/import/~.xml`
-* `import_db_data` local sql dump file path `/vagrant/import/~.sql`
+* `import_xml_data` local WordPress export (WXR) file path `/vagrant/import/*.xml`
+* `import_db_data` local sql dump file path `/vagrant/import/*.sql`
 * `import_backwpup`
-	* `path` Archive file path `/vagrant/import/~.zip` (Zip, Tar, Tar GZip, Tar BZip2)
+	* `path` Archive file path `/vagrant/import/*.zip` (Zip, Tar, Tar GZip, Tar BZip2)
 	* `db_data_file` DB backup file name (Import from one of data files)
 	* `xml_data_file` XML export file name (imported from one of the data files)
 * `import_admin` Add WordPress administrator user (default: `false` / value: `true` | `false`)

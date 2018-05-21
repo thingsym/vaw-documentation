@@ -1,6 +1,6 @@
 ---
 title: "Directory Layout"
-date: 2018-04-09T15:26:15Z
+date: 2018-05-20T15:26:15Z
 draft: false
 weight: 40
 ---
@@ -25,9 +25,9 @@ You can create the same environment as the production environment, when you buil
 	* all.yml (provisioning configuration file)
 * hosts
 	* local (inventory file)
-* import (stores import data)
+* import (stores import data, if necessary)
 * LICENSE (license file)
-* plugins (stores WordPress plugin zip format files)
+* plugins (stores WordPress plugin zip format files, if necessary)
 * Rakefile (Rakefile of ServerSpec)
 * README-ja.md
 * README.md
@@ -38,7 +38,7 @@ You can create the same environment as the production environment, when you buil
 	* localhost
 	* spec_helper.rb
 	* sync-dir
-* themes (stores WordPress theme zip format files)
+* themes (stores WordPress theme zip format files, if necessary)
 * uploads (uploads directory in the wp-content)
 * Vagrantfile (Vagrant configuration file)
 * wordpress (synchronize to the Document Root. create automatically at `vagrant up`, if it does not exist.)
