@@ -1,10 +1,39 @@
 ---
 title: "Changelog"
-date: 2018-05-20T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 110
 ---
 
+* version 0.6.3 - 2018.10.17
+	* optimize vagrant box
+	* add wordpress plugin health-check
+	* add phpstan
+	* add peco
+	* add jq
+	* fix tests
+* version 0.6.2 - 2018.09.23
+	* fix tests
+	* fix gem install globally
+* version 0.6.1 - 2018.09.17
+	* separate files
+	* add multiple search-replace
+	* change to multiple search-replace for replace_old_url
+* version 0.6.0 - 2018.09.03
+	* enable ssl and https by default
+	* bump up ruby version 2.5.1
+	* bump up Node version 8.11.4
+* version 0.5.9 - 2018.08.02
+	* improve phpenv.sh version 0.4.1
+	* fix php-build.default_configure_options
+	* fix httpd.conf for apache mpm_event
+	* add other versions database tasks
+	* bump up MariaDB 10.3, MySQL 5.7, Percona 5.7
+* version 0.5.8 - 2018.05.27
+	* add deployer and git-ftp
+	* remove capistrano and fabric
+	* add handlers with web server
+	* add option synced_folder_type with Vagrant Settings
 * version 0.5.7 - 2018.05.13
 	* change module from command to gem/npm
 	* fix deprecated match filter

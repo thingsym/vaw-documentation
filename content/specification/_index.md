@@ -1,28 +1,28 @@
 ---
 title: "Specification"
-date: 2017-10-17T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 70
 ---
 
-## Server (Selectable)
+### Server (Selectable)
 
 * [Apache](http://httpd.apache.org)
 * [nginx](http://nginx.org)
 * [H2O](https://h2o.examp1e.net)
 
-## FastCGI (Selectable)
+### FastCGI (Selectable)
 
 * [PHP-FPM](http://php-fpm.org) (FastCGI Process Manager)
 * [HHVM](http://hhvm.com) (HipHop Virtual Machine)
 
-## Database (Selectable)
+### Database (Selectable)
 
 * [MariaDB](https://mariadb.org)
 * [MySQL](http://www.mysql.com)
 * [Percona MySQL](http://www.percona.com/software/percona-server)
 
-## Pre-installing
+### Pre-installing
 
 * [WordPress](https://wordpress.org)
 * [phpenv](https://github.com/CHH/phpenv)
@@ -33,7 +33,7 @@ weight: 70
 * [WP-CLI](http://wp-cli.org)
 * [Git](http://git-scm.com)
 
-## Develop Tools (Activatable)
+### Develop Tools (Activatable)
 
 * [Subversion](https://subversion.apache.org)
 * [gettext](https://www.gnu.org/software/gettext/)
@@ -53,24 +53,26 @@ weight: 70
 * [wrk - Modern HTTP benchmarking tool](https://github.com/wg/wrk)
 * [plato](https://github.com/es-analysis/plato)
 * [stylestats](https://github.com/t32k/stylestats)
+* [PHPStan](https://github.com/phpstan/phpstan)
 * [PHPMD](https://phpmd.org/)
 * [webgrind](https://github.com/jokkedk/webgrind)
 * [MailHog](https://github.com/mailhog/MailHog)
 
-## Deploy Tools (Activatable)
+### Deploy Tools (Activatable)
 
-* [Capistrano](http://capistranorb.com)
-* [Fabric](http://www.fabfile.org)
 * [Dandelion](http://scttnlsn.github.io/dandelion/)
+* [Deployer](https://deployer.org/)
+* [Git-ftp](https://git-ftp.github.io/)
 * [Wordmove](https://github.com/welaika/wordmove)
 
-## Other
+### Other
 
 * [rbenv](https://github.com/sstephenson/rbenv)
 * [ruby-build](https://github.com/sstephenson/ruby-build)
 * [Ruby](https://www.ruby-lang.org/) via [rbenv](https://github.com/sstephenson/rbenv)
 
-## Helper command
+
+### Helper command
 
 * after_provision.sh
 * before_provision.sh

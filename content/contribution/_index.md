@@ -1,9 +1,11 @@
 ---
 title: "Contribution"
-date: 2018-04-09T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 100
 ---
+
+### Patches and Bug Fixes
 
 Small patches and bug reports can be submitted a issue tracker in Github. Forking on Github is another good way. You can send a pull request.
 

@@ -1,6 +1,6 @@
 ---
 title: "all.yml"
-date: 2018-05-20T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 20
 ---
@@ -89,7 +89,8 @@ In YAML format, you can set server, database and WordPress environment. And can 
 	import_admin       : false   # true|false
 	theme_unit_test    : false   # true|false
 
-	replace_old_url         : ''   # http(s)://example.com, to vm_hostname from old url
+	replace_old_url         : [] # http(s)://example.com, to vm_hostname from old url
+	search_replace_strings  : {}
 	regenerate_thumbnails   : false   # true|false
 
 	WP_DEBUG           : true   # true|false
@@ -97,11 +98,11 @@ In YAML format, you can set server, database and WordPress environment. And can 
 
 	## Develop & Deploy Settings ##
 
-	ssl                : false   # true|false
+	ssl                : true   # true|false
 
 	# See Supported Versions http://php.net/supported-versions.php
 	php_version        : 7.2.1
-	http_protocol      : http   # http|https
+	http_protocol      : https   # http|https
 
 	develop_tools      : false   # true|false
 	deploy_tools       : false   # true|false
@@ -224,14 +225,39 @@ Disable the setting case
 * `import_admin` Add WordPress administrator user (default: `false` / value: `true` | `false`)
 * `theme_unit_test` import Theme Unit Test data enabled flag (default: `false` / value: `true` | `false`)
 * `replace_old_url` replace to `vm_hostname` from `old url`
+
+Configuration example
+
+	replace_old_url         :
+	                           - http://example.com
+	                           - http://www.example.com
+	                           - https://example.com
+
+Disable the setting case
+
+	replace_old_url         : []
+
+* `search_replace_strings` Search the database and replace the matched string
+
+Configuration example
+
+	search_replace_strings  :
+	                           'foo': 'bar'
+	                           'abc': 'xyz'
+	                           'Hello, World!': 'Welcome to WordPress!'
+
+Disable the setting case
+
+	search_replace_strings  : {}
+
 * `regenerate_thumbnails` regenerate thumbnails enabled flag (default: `false` / value: `true` | `false`)
 * `WP_DEBUG` debug mode (default: `true` / value: `true` | `false`)
 * `SAVEQUERIES` save the database queries (default: `true` / value: `true` | `false`)
 
 #### Develop & Deploy Settings ##
 
-* `ssl` WordPress administration over SSL enabled flag (default: `false` / value: `true` | `false`)
+* `ssl` WordPress administration over SSL enabled flag (default: `true` / value: `true` | `false`)
 * `php_version` version of PHP (default: `7.2.1`)
-* `http_protocol` HTTP protocol (default: `http` / value: `http` | `https`)
+* `http_protocol` HTTP protocol (default: `https` / value: `http` | `https`)
 * `develop_tools` activate develop tools (default: `false` / value: `true` | `false`)
 * `deploy_tools` activate deploy tools (default: `false` / value: `true` | `false`)

@@ -1,6 +1,6 @@
 ---
 title: "Directory Layout"
-date: 2018-05-20T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 40
 ---
@@ -15,7 +15,7 @@ This directory synchronize to the guest OS side `/vagrant`. `wordpress` creates 
 
 You can create the same environment as the production environment, when you build a wordpress by import database dump data, substitution of url, regeneration of thumbnail image. You can set all from the provisioning configuration file.
 
-## Full Layout
+### Full Layout
 
 * backup (stores backup file. create automatically at running script, if it does not exist.)
 * command (stores shell script)
@@ -44,7 +44,7 @@ You can create the same environment as the production environment, when you buil
 * wordpress (synchronize to the Document Root. create automatically at `vagrant up`, if it does not exist.)
 * wp-content (WordPress's wp-content directory)
 
-## Minimum Layout
+### Minimum Layout
 
 The VAW will be built in the directory structure of the following minimum unit.
 

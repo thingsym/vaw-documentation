@@ -1,6 +1,6 @@
 ---
 title: "How to make Vagrant Box"
-date: 2017-10-17T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 50
 ---
@@ -9,7 +9,7 @@ How to use the provisioning mode?
 
 Let's see how to make Vagrant Box through the process from provisioning with Vagrant Box to building WordPress development environment.
 
-## 1. Setting of configuration file
+### 1. Setting of configuration file
 
 We will launch the Vagrant environment for creating Vagrant Box.
 First of all, Set up the Vagrant configuration file and the provisioning configuration file.
@@ -22,19 +22,19 @@ You can set the provisioning configuration file as you like.
 
 However, if `provision_mode` is `box`, the WordPress Settings section of the provisioning configuration file will be skipped during provisioning.
 
-## 2. Provisioning
+### 2. Provisioning
 
 Provision and build the environment.
 
 	vagrant up
 
-## 3. Creating a Vagrant Box (Packaging)
+### 3. Creating a Vagrant Box (Packaging)
 
 After provisioning is completed, create a Vagrant Box with a box name. (e.g. sample.box)
 
 	vagrant package --output sample.box
 
-## 4. Registration of Vagrant Box
+### 4. Registration of Vagrant Box
 
 Add the created Vagrant Box to Vagrant. (Register as eg sample)
 
@@ -45,7 +45,7 @@ You can destroy the launched Vagrant environment after checking the operation.
 
 	vagrant destroy
 
-## 5. Provisioning with the created Vagrant Box
+### 5. Provisioning with the created Vagrant Box
 
 Launch the Vagrant environment for WordPress development with the Vagrant Box you created.
 Set up the Vagrant configuration file and the provisioning configuration file.
@@ -61,7 +61,7 @@ You can set the provisioning configuration file as you like.
 
 However, if `provision_mode` is `wordpress`, only the WordPress Settings section of the provisioning configuration file is enabled during provisioning.
 
-## 6. Launch a virtual environment
+### 6. Launch a virtual environment
 
 	vagrant up
 

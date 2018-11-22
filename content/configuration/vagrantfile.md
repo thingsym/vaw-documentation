@@ -1,6 +1,6 @@
 ---
 title: "Vagrantfile"
-date: 2018-05-20T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 10
 ---
@@ -25,6 +25,7 @@ You can accesse from a terminal in the same LAN to use the public network to Vag
 	public_ip             = ''
 
 	vbguest_auto_update   = true
+	synced_folder_type    = 'virtualbox' # virtualbox|nfs|rsync|smb
 
 	ansible_install_mode  = :default    # :default|:pip
 	ansible_version       = 'latest'    # only :pip required
@@ -39,6 +40,7 @@ You can accesse from a terminal in the same LAN to use the public network to Vag
 	* auto create `wordpress` directory and synchronized
 * `public_ip` IP address of bridged connection (default: `''`)
 * `vbguest_auto_update` update VirtualBox Guest Additions (default: `true` / value: `true` | `false`)
-* `ansible_install_mode` (required)  the way to install Ansible (default: `:default` / value: `:default` | `:pip`)
+* `synced_folder_type` the type of synced folder (default: `virtualbox` / value: `virtualbox` | `nfs` | `rsync` | `smb`)
+* `ansible_install_mode` (required) the way to install Ansible (default: `:default` / value: `:default` | `:pip`)
 * `ansible_version` version of Ansible to install (default: `latest`)
 * `provision_mode` (required) Provisioning mode (default: `all` / value: `all` | `wordpress` | `box`)

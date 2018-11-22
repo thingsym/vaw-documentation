@@ -1,6 +1,6 @@
 ---
 title: "About VAW"
-date: 2017-10-17T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Vagrant Box"
-date: 2017-10-17T15:26:15Z
+date: 2018-11-22T10:26:15Z
 draft: false
 weight: 60
 ---
@@ -14,12 +14,12 @@ In addition, you can use the `vaw/centos*-full` Box which has already provisione
 
 You can build the environment in a short period of time compared with provisioning from the pure vagrant Box.
 
-## CentOS 7
+### CentOS 7
 
 * [vaw/centos7-default](https://atlas.hashicorp.com/vaw/boxes/centos7-default)
 * [vaw/centos7-full](https://atlas.hashicorp.com/vaw/boxes/centos7-full)
 
-## CentOS 6
+### CentOS 6
 
 * [vaw/centos6-default](https://atlas.hashicorp.com/vaw/boxes/centos6-default)
 * [vaw/centos6-full](https://atlas.hashicorp.com/vaw/boxes/centos6-full)
