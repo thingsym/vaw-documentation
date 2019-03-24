@@ -1,6 +1,7 @@
 ---
 title: "all.yml"
 date: 2018-11-22T10:26:15Z
+lastmod: 2019-03-24T15:26:15Z
 draft: false
 weight: 20
 ---
@@ -14,7 +15,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 	## Server & Database Settings ##
 
 	server             : apache   # apache|nginx|h2o
-	fastcgi            : none     # none|php-fpm|hhvm
+	fastcgi            : none     # none|php-fpm
 
 	database           : mariadb  # mariadb|mysql|percona
 	db_root_password   : admin
@@ -116,7 +117,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 #### Server & Database Settings ##
 
 * `server` (required) name of web server (default: `apache` / value: `apache` | `nginx` | `h2o`)
-* `fastcgi` name of fastCGI (default: `none` / value: `none` | `php-fpm` | `hhvm`)
+* `fastcgi` name of fastCGI (default: `none` / value: `none` | `php-fpm`)
 * `database` (required) name of databese (default: `mariadb` / value: `mariadb` | `mysql` | `percona`)
 * `db_root_password` (required) database root password (default: `admin`)
 * `db_host` (required) database host (default: `localhost`)

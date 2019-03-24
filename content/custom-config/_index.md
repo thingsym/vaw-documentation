@@ -1,6 +1,7 @@
 ---
 title: "Custom Config"
 date: 2018-04-09T15:26:15Z
+lastmod: 2019-03-24T15:26:15Z
 draft: false
 weight: 90
 ---
@@ -11,7 +12,6 @@ As follows editable configuration files.
 * default-node-packages.j2
 * default-ruby-gems.j2
 * h2o.conf.j2
-* hhvm.server.ini.j2
 * httpd.conf.centos6.j2
 * httpd.conf.centos7.j2
 * httpd.www.conf.centos7.j2

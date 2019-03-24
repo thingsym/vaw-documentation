@@ -1,6 +1,7 @@
 ---
 title: "Specification"
 date: 2018-11-22T10:26:15Z
+lastmod: 2019-03-24T15:26:15Z
 draft: false
 weight: 70
 ---
@@ -14,7 +15,6 @@ weight: 70
 ### FastCGI (Selectable)
 
 * [PHP-FPM](http://php-fpm.org) (FastCGI Process Manager)
-* [HHVM](http://hhvm.com) (HipHop Virtual Machine)
 
 ### Database (Selectable)
 
@@ -53,7 +53,7 @@ weight: 70
 * [wrk - Modern HTTP benchmarking tool](https://github.com/wg/wrk)
 * [plato](https://github.com/es-analysis/plato)
 * [stylestats](https://github.com/t32k/stylestats)
-* [PHPStan](https://github.com/phpstan/phpstan)
+* [PHPStan](https://github.com/phpstan/phpstan) (Only PHP7)
 * [PHPMD](https://phpmd.org/)
 * [webgrind](https://github.com/jokkedk/webgrind)
 * [MailHog](https://github.com/mailhog/MailHog)
