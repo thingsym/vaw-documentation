@@ -13,7 +13,7 @@ pygmentsCodefences = true
     # Souce Code repository section
     description = "VAW (Vagrant Ansible WordPress) is Ansible playbooks for website developer, designer, webmaster and WordPress theme/plugin developer."
     github_repository = "https://github.com/thingsym/vaw"
-    version = "0.6.5"
+    version = "0.6.6"
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
