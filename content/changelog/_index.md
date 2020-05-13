@@ -6,6 +6,38 @@ draft: false
 weight: 110
 ---
 
+## [0.7.1] - 2020.04.22
+
+- improve openssl role
+- bump up php 7.3.17
+- bump up MariaDB 10.4
+- change loop from with_items to a list of packages
+- fix git2u obsoleted
+
+## [0.7.0] - 2020.01.29
+
+- fix IUS repository url
+
+## [0.6.9] - 2019.11.20
+
+- bump up node version
+- fix php config with phpenv.sh
+- fix IUS repository url
+
+## [0.6.8] - 2019.10.02
+
+- fix php config with phpenv.sh
+- improve kernel parameter
+- bump up php version
+- fix php-build.default_configure_options
+- add Zstandard compression algorithm
+
+## [0.6.7] - 2019.07.19
+
+- bump up php codesniffer
+- fix httpd.conf
+- add choice of openssl installation, source or package
+
 ## [0.6.6] - 2019.06.11
 
 - improve to add forwarded_port using array
