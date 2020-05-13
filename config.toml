@@ -1,19 +1,22 @@
 baseURL = "https://thingsym.github.io/vaw/"
+
 languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "VAW (Vagrant Ansible WordPress) Documentation"
-theme = "hugo-theme-techdoc-0.2.2"
+theme = "hugo-theme-techdoc-0.9.0"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
 
-pygmentsUseClasses = true
-pygmentsCodefences = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
 
 [Params]
-    # Souce Code repository section
+    # Source Code repository section
     description = "VAW (Vagrant Ansible WordPress) is Ansible playbooks for website developer, designer, webmaster and WordPress theme/plugin developer."
     github_repository = "https://github.com/thingsym/vaw"
-    version = "0.6.6"
+    version = "0.7.1"
 
     # Documentation repository section
     # documentation repository (set edit link to documentation repository)
@@ -24,8 +27,76 @@ pygmentsCodefences = true
     tag_manager_container_id = "" # Your Google Tag Manager container id
     google_site_verification = "" # Your Google Site Verification
 
+    # Open Graph and Twitter Cards settings section
+    # Open Graph settings for each page are set on the front matter.
+    # See https://gohugo.io/templates/internal/#open-graph
+    # See https://gohugo.io/templates/internal/#twitter-cards
+    title = "VAW (Vagrant Ansible WordPress) Documentation"
+    images = [] # Open graph images are placed in `static/images`
+
     # Theme settings section
+    # Theme color
+    # See color value reference https://developer.mozilla.org/en-US/docs/Web/CSS/color
+    custom_font_color = ""
+    custom_background_color = ""
+
+    # Documentation Menu section
+    # Menu style settings
+    menu_style = "open-menu" # "open-menu" or "slide-menu"
+
+    # Date format
     dateformat = "" # default "2 Jan 2006"
+    # See the format reference https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
 
     # path name excluded from documentation menu
     menu_exclusion = []
+
+    # Algolia site search section
+    # See https://www.algolia.com/doc/
+    algolia_search_enable = true
+    algolia_indexName = "vaw_doc"
+    algolia_appId = "DCXQ40Z7FZ"
+    algolia_apiKey = "8b1fce019e261aab8b9bb88e518bd3b6" # Search-Only API Key
+
+# Global menu section
+# See https://gohugo.io/content-management/menus/
+[menu]
+    [[menu.main]]
+        name = "Search"
+        url = "/search"
+        weight = 1
+
+# Markup configure section
+# See https://gohugo.io/getting-started/configuration-markup/
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark.renderer]
+        unsafe= true
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 4
+        ordered = false
+
+# Algolia Search configure section
+[outputFormats.Algolia]
+    baseName = "algolia"
+    isPlainText = true
+    mediaType = "application/json"
+    notAlternative = true
+
+[params.algolia]
+    vars = [
+        "title",
+        "summary",
+        "content",
+        "date",
+        "publishdate",
+        "description",
+        "permalink",
+        "keywords",
+        "lastmod",
+    ]
+    params = [
+        "tags",
+        "categories",
+    ]
