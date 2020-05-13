@@ -15,9 +15,8 @@ script:
   - hugo
 
 deploy:
-  provider: pages:git
+  provider: pages
   token: $GITHUB_TOKEN
-  edge: true
   local_dir: public
   repo: thingsym/vaw
   target_branch: gh-pages
