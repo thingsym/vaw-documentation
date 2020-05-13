@@ -2,7 +2,7 @@
 
 set -e
 
-VERSION=0.54.0
+VERSION=0.69.2
 ARCH=Linux-64bit
 EXTENSION=tar.gz
 
