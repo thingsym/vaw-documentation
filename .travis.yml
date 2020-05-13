@@ -15,11 +15,12 @@ script:
   - hugo
 
 deploy:
+  provider: pages:git
+  token: $GITHUB_TOKEN
+  edge: true
   local_dir: public
   repo: thingsym/vaw
   target_branch: gh-pages
-  provider: pages
-  token: $GITHUB_TOKEN
   keep_history: true
   on:
     branch: master
