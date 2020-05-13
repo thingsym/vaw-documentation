@@ -1,5 +1,6 @@
+dist: xenial
+os: linux
 language: go
-sudo: false
 
 env:
   global:
@@ -14,12 +15,11 @@ script:
   - hugo
 
 deploy:
-  local-dir: public
+  local_dir: public
   repo: thingsym/vaw
   target_branch: gh-pages
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   keep_history: true
   on:
     branch: master
