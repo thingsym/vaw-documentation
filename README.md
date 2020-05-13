@@ -1,6 +1,6 @@
 # VAW (Vagrant Ansible WordPress) Documentation
 
-# Hugo install
+# Install Hugo
 ```
 sudo bash bin/installer-hugo.sh
 
