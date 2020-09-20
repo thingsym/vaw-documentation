@@ -3,7 +3,7 @@ baseURL = "https://thingsym.github.io/vaw/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "VAW (Vagrant Ansible WordPress) Documentation"
-theme = "hugo-theme-techdoc-0.9.2"
+theme = "hugo-theme-techdoc"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
