@@ -1,10 +1,21 @@
 ---
 title: "Changelog"
 date: 2018-11-22T10:26:15Z
-lastmod: 2019-03-24T15:26:15Z
+lastmod: 2020-10-18T15:26:15Z
 draft: false
 weight: 110
 ---
+
+## [0.7.4] - 2020.10.18
+
+- improve npm-installer.sh
+- remove develop tools, migrate to project's local development environment
+
+## [0.7.3] - 2020.08.10
+
+- add npm-installer.sh
+- support php 7.4
+- bump up ruby 2.7.1
 
 ## [0.7.2] - 2020.06.29
 
