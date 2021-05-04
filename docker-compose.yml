@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hugo:
+    image: klakegg/hugo:0.81.0-alpine
+    # image: klakegg/hugo:0.81.0-ext-alpine
+    command: "server --bind 0.0.0.0 -wD --ignoreCache --minify"
+    volumes:
+      - .:/src
+    ports:
+      - 1313:1313
