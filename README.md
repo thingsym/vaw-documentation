@@ -1,22 +1,44 @@
 # VAW (Vagrant Ansible WordPress) Documentation
 
-# Install Hugo
-```
-sudo bash bin/installer-hugo.sh
+## Docker environment
 
+### Server
+
+```
+cd /path/to/vaw-documentation
+docker-compose up -d
+```
+
+Browse site on http://localhost:1313/vaw/
+
+### Generate documentation
+
+```
+docker-compose run --rm hugo -d public --minify
+```
+
+## Local development environment
+
+### Install Hugo
+
+```
+cd /path/to/vaw-documentation
+sudo bash bin/installer-hugo.sh
 hugo help
 ```
 
-## Server
+### Start server
+
 ```
-cd /path/to/vaw-documentation
-hugo server --port 3000 --bind 0.0.0.0 -wD --ignoreCache
+hugo server --bind 0.0.0.0 -wD --ignoreCache --minify
 ```
 
-## Generate documentation
+Browse site on http://localhost:1313/vaw/
+
+### Generate documentation
+
 ```
-cd /path/to/vaw-documentation
-hugo -d docs
+hugo -d public --minify
 ```
 
 ## Contribution
