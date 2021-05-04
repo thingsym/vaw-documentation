@@ -1,6 +1,7 @@
 ---
-title: "Helper Command"
+title: "Helper command"
 date: 2018-11-22T10:26:15Z
+lastmod: 2021-05-03T15:26:15Z
 draft: false
 weight: 80
 ---

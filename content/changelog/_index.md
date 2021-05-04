@@ -1,10 +1,61 @@
 ---
 title: "Changelog"
 date: 2018-11-22T10:26:15Z
-lastmod: 2020-10-18T15:26:15Z
+lastmod: 2021-05-03T15:26:15Z
 draft: false
 weight: 110
 ---
+
+## [0.8.1] - 2021.04.05
+
+* add vagrant plugins install command
+* change tar extract to unarchive module
+* change libzip installation via source
+* add ignore_configcheck
+* add purged package task
+* add all packages update task
+* remove openssl role, replace to mkcert
+* fix ssl certificate file path for mkcert
+* change include task from include to include_tasks
+* add develop tools
+* fix mysql sock path
+* add FUNDING.yml
+* remove packagist.jp repository
+* add fail message for centos8
+
+## [0.8.0] - 2021.01.27
+
+* edit README
+* add box, support Debian and Ubuntu
+* bump up php version to 7.4.14
+* change phpenv repo
+* add port 1025 to forwarded_port
+* bump up node version to 14.15.3
+* add checking database for wordpress
+* change database connect via TCP/IP
+* impove database tasks
+* change database unix domain socket path to /tmp/mysql.sock
+* add test case for Debian
+* fix tasks for Debian
+
+## [0.7.6] - 2021.01.11
+
+* deprecated centos 8 box
+* using the version function to check the version
+
+## [0.7.5] - 2020.12.28
+
+* remove default Vagrant BOX
+* fix tasks for Debian
+* replace yarn from wordpress-develop to nodenv
+* fix phpenv task
+* fix openssl task
+* fix conditional statement
+* add disable gpg_check, fix Failed to validate GPG signature
+* remove deployer and git-ftp
+* support CentOS 8
+* improve loading include task with ansible_distribution and ansible_distribution_major_version
+* remove prestissimo for Composer 2.0
 
 ## [0.7.4] - 2020.10.18
 

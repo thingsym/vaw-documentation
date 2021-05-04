@@ -1,17 +1,18 @@
 ---
 title: "About VAW"
 date: 2018-11-22T10:26:15Z
+lastmod: 2021-05-03T15:26:15Z
 draft: false
 weight: 10
 ---
 
 ## Features
 
-### 1. Build Server and Database environment
+### 1. Build OS, Server and Database environment
 
-The **VAW** will build server from **Apache**, **nginx** or **H2O**, and build database from **MariaDB**, **MySQL** or **Percona MySQL**.
+The **VAW** will build OS from **CentOS** or **Debian** or **Ubuntu**, server from **Apache** or  **nginx** or **H2O**, and build database from **MariaDB** or **MySQL** or **Percona MySQL**.
 
-On all web servers, FastCGI configuration is possible. Build PHP execution environment from **PHP-FPM** (FastCGI Process Manager) or **HHVM** (HipHop Virtual Machine).
+On all web servers, FastCGI configuration is possible. Build PHP execution environment from **PHP-FPM** (FastCGI Process Manager).
 
 By default, the server and the databese is installed in the default settings. Also you can edit configuration files.
 

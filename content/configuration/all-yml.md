@@ -1,7 +1,7 @@
 ---
 title: "all.yml"
 date: 2018-11-22T10:26:15Z
-lastmod: 2019-03-24T15:26:15Z
+lastmod: 2021-05-03T15:26:15Z
 draft: false
 weight: 20
 ---
@@ -102,7 +102,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 	ssl                : true   # true|false
 
 	# See Supported Versions http://php.net/supported-versions.php
-	php_version        : 7.3.17
+	php_version        : 7.4.14
 	http_protocol      : https   # http|https
 
 	develop_tools      : false   # true|false
@@ -258,7 +258,7 @@ Disable the setting case
 #### Develop & Deploy Settings ##
 
 * `ssl` WordPress administration over SSL enabled flag (default: `true` / value: `true` | `false`)
-* `php_version` version of PHP (default: `7.3.17`)
+* `php_version` version of PHP (default: `7.4.14`)
 * `http_protocol` HTTP protocol (default: `https` / value: `http` | `https`)
 * `develop_tools` activate develop tools (default: `false` / value: `true` | `false`)
 * `deploy_tools` activate deploy tools (default: `false` / value: `true` | `false`)

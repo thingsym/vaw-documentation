@@ -1,6 +1,7 @@
 ---
 title: "Directory Layout"
 date: 2018-11-22T10:26:15Z
+lastmod: 2021-05-03T15:26:15Z
 draft: false
 weight: 40
 ---
@@ -28,6 +29,7 @@ You can create the same environment as the production environment, when you buil
 * import (stores import data, if necessary)
 * LICENSE (license file)
 * plugins (stores WordPress plugin zip format files, if necessary)
+* mkcert (stores SSL certificate files)
 * Rakefile (Rakefile of ServerSpec)
 * README-ja.md
 * README.md
