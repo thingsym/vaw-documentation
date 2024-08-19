@@ -1,7 +1,7 @@
 ---
 title: "Helper command"
 date: 2018-11-22T10:26:15Z
-lastmod: 2021-05-03T15:26:15Z
+lastmod: 2024-08-18T15:26:15Z
 draft: false
 weight: 80
 ---
@@ -19,7 +19,7 @@ The **VAW** offers a useful scripts. Just run the script on a terminal. Database
 
 `phpenv.sh` will prepare the specified version of PHP execution environment. You can install the specified version of PHP. Switching the PHP version. And then restart Apache or PHP-FPM by switching the server configuration environment.
 
-	/vagrant/command/phpenv.sh -v 7.2.1 -m php-fpm -s unix
+	/vagrant/command/phpenv.sh -v 8.2.19 -m php-fpm -s unix
 
 	# help
 	/vagrant/command/phpenv.sh -h

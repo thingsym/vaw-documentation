@@ -1,10 +1,84 @@
 ---
 title: "Changelog"
 date: 2018-11-22T10:26:15Z
-lastmod: 2021-05-03T15:26:15Z
+lastmod: 2024-08-18T15:26:15Z
 draft: false
-weight: 110
+weight: 120
 ---
+
+## [0.8.9] - 2024.08.06
+
+* improve tasks with ansible-lint
+* fix .ansible-lint config
+* fix workflow
+* fix vm box
+* bump up php version to 8.2.19
+* fix reset role
+* fix develop-tool
+* improve mariadb and mysql role
+* remove percona
+* bump up git package to git236
+* add and update vm box
+
+## [0.8.8] - 2022.10.28
+
+* bump up php version
+* remove makepot.php
+
+## [0.8.7] - 2022.05.13
+
+* fix memory to 2GB
+* fix space
+* fix lint unnamed-task
+* add database backup using vagrant trigger
+* fix installing libzip for php 8.0
+
+## [0.8.6] - 2022.04.19
+
+* add .yamllint for ansible-lint
+* fix updating npm with ncu
+* fix a bug that SSH auth does not pass for ubuntu/focal64, ubuntu/bionic64
+* change function name
+* add Trouble shooting to README
+* fix script provision for os distribute
+
+## [0.8.5] - 2021.10.10
+
+* fix ansible-lint conf
+* improve roles using ansible-lint
+* fix .editorconfig
+* add ansible_install flag
+* add debian/bullseye64 box
+* add checking stat
+* remove become and become_user with after-command and before commnad
+* fix workflow
+* remove tatsushid repository for Debian, using default repository
+* fix mysql role for mysql 8.0
+* bump up mysql-apt
+* add default-packages with nodenv
+* split roles file into common roles
+* fix ruby_version
+* rename bashrc alias
+
+## [0.8.4] - 2021.07.22
+
+* bump up ruby 2.7.2
+* fix .ansible-lint
+* lint playbooks and improve roles
+* support PHP8
+
+## [0.8.3] - 2021.06.15
+
+* fix regexp with replace module
+* change certificate file placement from host shared folder to guest
+
+## [0.8.2] - 2021.05.30
+
+* add custom config files for phpenv.sh
+* support custom config for phpenv.sh
+* fix php.ini
+* fix libzip for php 7.4
+* edit README
 
 ## [0.8.1] - 2021.04.05
 

@@ -2,7 +2,7 @@
 title: "Provisioning Mode"
 date: 2017-10-17T15:26:15Z
 draft: false
-weight: 50
+weight: 60
 ---
 
 The VAW has three provisioning modes.

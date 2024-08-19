@@ -1,30 +1,33 @@
 ---
 title: "Vagrant Box"
 date: 2018-11-22T10:26:15Z
-lastmod: 2021-05-03T15:26:15Z
+lastmod: 2024-08-18T15:26:15Z
 draft: false
-weight: 60
+weight: 50
 ---
 
 The VAW supports VirtualBox for providers of Vagrant. Operating system supported CentOS, Debian and Ubuntu Boxes. OS architecture supported x86_64. Details are as follows:
 
-### CentOS
-
-* CentOS 8 (Deprecated ended 2021-12-31)
-* CentOS 7 (Main support)
-* CentOS 6 (Deprecated ended 2020-11-30)
-
 ### Debian
 
-* Debian 10.0 (Main support)
-* Debian 9.0 (Main support)
+* Debian 12.0
+* Debian 11.0
+* Debian 10.0 (Deprecated ended 2024-06-30)
+* Debian 9.0 (Deprecated ended 2022-06-30)
 * Debian 8.0 (Deprecated ended 2020-06-30)
 
 ### Ubuntu
 
-* Ubuntu 18.04 (In preparation)
-* Ubuntu 16.04 (Main support)
-* Ubuntu 14.04 (Deprecated ended 2019-04-25)
+* Ubuntu 20.04
+* Ubuntu 18.04
+* Ubuntu 16.04
+* Ubuntu 14.04
+
+### CentOS
+
+* CentOS 8 (Deprecated ended 2021-12-31)
+* CentOS 7 (Deprecated ended 2024-06-30)
+* CentOS 6 (Deprecated ended 2020-11-30)
 
 To download Vagrant Box, you can search from [Discover Vagrant Boxes](https://app.vagrantup.com/boxes/search?provider=virtualbox).
 

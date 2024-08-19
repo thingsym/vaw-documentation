@@ -2,7 +2,7 @@
 title: "How to make Vagrant Box"
 date: 2018-11-22T10:26:15Z
 draft: false
-weight: 50
+weight: 51
 ---
 
 How to use the provisioning mode?

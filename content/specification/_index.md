@@ -1,7 +1,7 @@
 ---
 title: "Specification"
 date: 2018-11-22T10:26:15Z
-lastmod: 2021-05-03T15:26:15Z
+lastmod: 2024-08-18T15:26:15Z
 draft: false
 weight: 70
 ---
@@ -20,7 +20,6 @@ weight: 70
 
 * [MariaDB](https://mariadb.org)
 * [MySQL](http://www.mysql.com)
-* [Percona MySQL](http://www.percona.com/software/percona-server)
 
 ### Pre-installing
 

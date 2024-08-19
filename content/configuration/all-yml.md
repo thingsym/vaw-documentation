@@ -1,7 +1,7 @@
 ---
 title: "all.yml"
 date: 2018-11-22T10:26:15Z
-lastmod: 2021-05-03T15:26:15Z
+lastmod: 2024-08-18T15:26:15Z
 draft: false
 weight: 20
 ---
@@ -17,7 +17,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 	server             : apache   # apache|nginx|h2o
 	fastcgi            : none     # none|php-fpm
 
-	database           : mariadb  # mariadb|mysql|percona
+	database           : mariadb  # mariadb|mysql
 	db_root_password   : admin
 
 	db_host            : localhost
@@ -100,10 +100,10 @@ In YAML format, you can set server, database and WordPress environment. And can 
 	## Develop & Deploy Settings ##
 
 	ssl                : true   # true|false
+	http_protocol      : https   # http|https
 
 	# See Supported Versions http://php.net/supported-versions.php
-	php_version        : 7.4.14
-	http_protocol      : https   # http|https
+	php_version        : 7.4.33
 
 	develop_tools      : false   # true|false
 	deploy_tools       : false   # true|false
@@ -118,7 +118,7 @@ In YAML format, you can set server, database and WordPress environment. And can 
 
 * `server` (required) name of web server (default: `apache` / value: `apache` | `nginx` | `h2o`)
 * `fastcgi` name of fastCGI (default: `none` / value: `none` | `php-fpm`)
-* `database` (required) name of databese (default: `mariadb` / value: `mariadb` | `mysql` | `percona`)
+* `database` (required) name of databese (default: `mariadb` / value: `mariadb` | `mysql`)
 * `db_root_password` (required) database root password (default: `admin`)
 * `db_host` (required) database host (default: `localhost`)
 * `db_name` (required) name of database (default: `wordpress`)
@@ -258,7 +258,7 @@ Disable the setting case
 #### Develop & Deploy Settings ##
 
 * `ssl` WordPress administration over SSL enabled flag (default: `true` / value: `true` | `false`)
-* `php_version` version of PHP (default: `7.4.14`)
 * `http_protocol` HTTP protocol (default: `https` / value: `http` | `https`)
+* `php_version` version of PHP (default: `7.4.33`)
 * `develop_tools` activate develop tools (default: `false` / value: `true` | `false`)
 * `deploy_tools` activate deploy tools (default: `false` / value: `true` | `false`)

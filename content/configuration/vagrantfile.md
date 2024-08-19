@@ -1,7 +1,7 @@
 ---
 title: "Vagrantfile"
 date: 2018-11-22T10:26:15Z
-lastmod: 2021-05-03T15:26:15Z
+lastmod: 2024-08-18T15:26:15Z
 draft: false
 weight: 10
 ---
@@ -17,7 +17,8 @@ If you launch multiple environments, change the name of the directory. Should re
 You can accesse from a terminal in the same LAN to use the public network to Vagrant virtual environment. To use public networks, set IP address for bridged connection to `public_ip`. In that case, recommended that configure the same IP address to `vm_hostname`.
 
 	## Vagrant Settings ##
-	vm_box                = 'centos/7'
+
+	vm_box                = 'debian/bullseye64'    # Debian 11.0
 	vm_box_version        = '>= 0'
 	vm_ip                 = '192.168.46.49'
 	vm_hostname           = 'vaw.local'
@@ -35,8 +36,12 @@ You can accesse from a terminal in the same LAN to use the public network to Vag
 	vbguest_auto_update   = true
 	synced_folder_type    = 'virtualbox' # virtualbox|nfs|rsync|smb
 
+	backup_database       = false
+
+	ansible_install       = true
 	ansible_install_mode  = :default    # :default|:pip
-	ansible_version       = 'latest'    # only :pip required
+	ansible_version       = 'latest'    # requires :pip in ansible_install_mode
+
 
 	provision_mode        = 'all'       # all|wordpress|box
 
@@ -46,7 +51,7 @@ You can accesse from a terminal in the same LAN to use the public network to Vag
 		'vagrant-serverspec'
 	]
 
-* `vm_box` (required) name of Vagrant Box (default: `centos/7`)
+* `vm_box` (required) name of Vagrant Box (default: `debian/bullseye64`)
 * `vm_box_version` (required) version of Vagrant Box (default: `>= 0`)
 * `vm_ip` (required) private IP address (default: `192.168.46.49`)
 * `vm_hostname` (required) hostname (default: `vaw.local`)
@@ -61,6 +66,8 @@ You can accesse from a terminal in the same LAN to use the public network to Vag
 * `vbguest_auto_update` whether to update VirtualBox Guest Additions (default: `true` / value: `true` | `false`)
 トします (default: `true` / value: `true` | `false`)
 * `synced_folder_type` the type of synced folder (default: `virtualbox` / value: `virtualbox` | `nfs` | `rsync` | `smb`)
+* `backup_database` enable auto database backup when vagrant destroy or halt (default: `false` / value: `true` | `false`)
+* `ansible_install` (required) install Ansible (default: `:true` / value: `:true` | `:false`)
 * `ansible_install_mode` (required) the way to install Ansible (default: `:default` / value: `:default` | `:pip`)
 * `ansible_version` version of Ansible to install (default: `latest`)
 * `provision_mode` (required) Provisioning mode (default: `all` / value: `all` | `wordpress` | `box`)
