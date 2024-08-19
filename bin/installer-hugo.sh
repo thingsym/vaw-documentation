@@ -2,13 +2,13 @@
 
 set -e
 
-VERSION=0.81.0
+VERSION=0.121.2
 ARCH=Linux-64bit
 EXTENDED=true
 FILENAME_EXTENSION=tar.gz
 
 usage() {
-  echo "Hugo installer Version 0.2.0"
+  echo "Hugo installer Version 0.3.0"
   echo "usage: $0 [<VERSION>] [<EXTENDED>] [<ARCH>] [<FILENAME_EXTENSION>]"
   echo "usage: $0 --help"
   exit 0
